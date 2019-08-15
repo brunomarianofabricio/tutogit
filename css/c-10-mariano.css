@@ -1,0 +1,90 @@
+/*Propiedades GRID CONTAINER*/
+/*Grid-template-column*/
+.g-cont {
+		display: grid;
+		grid-template-columns: 25% 25% 25% 25%; /*define la cantidad de columnas y su ancho*/
+		grid-template-columns: repeat(3, auto); /*una especie de shorthand (3 -cantidad de columnas- auto -medida.*/
+		grid-template-rows: 300px 450px 200px;
+		background: green;
+		}
+
+.g-cont div {
+	background: red; border: solid 1px white;
+	padding: 1.5em;
+	text-align: center;
+}
+
+.g-cont2 {
+		display: grid;
+		
+		grid-template-columns: repeat(3, auto); /*una especie de shorthand (3 -cantidad de columnas- auto -medida.*/
+		grid-template-rows: 50px 100px 200px;
+		background: green;
+		}
+
+.g-cont2 div {
+	background: red; border: solid 1px white;
+	padding: 1.5em;
+	text-align: center;
+}
+
+
+/*grid-column-gap // grid-row-gap*/
+
+.g-cont3 {
+		display: grid;
+		
+		grid-template-columns: repeat(3, auto); /*una especie de shorthand (3 -cantidad de columnas- auto -medida.*/
+		grid-template-rows: repeat(3,150px);
+		grid-column-gap: 1em;/*define espacio o margin entre items/elementos*/
+		grid-row-gap: 1em; /*define espacio o margin entre las filas*/
+		grid-gap: 4em; /*shorthand de las dos propiedades de arriba (column gap + row-gap)*/
+		background: green;
+		}
+
+.g-cont3 div {
+	background: red; border: solid 1px white;
+	padding: 1.5em;
+	text-align: center;}
+
+/*justify-content*/
+
+.g-cont4 {
+		display: grid;
+		
+		grid-template-columns: repeat(3, 200px); /*una especie de shorthand (3 -cantidad de columnas- auto -medida.*/
+		grid-template-rows: repeat(3,150px);
+		justify-content: space-around; /*el mismo justify-content de flexbox*/
+		align-content:space-between; ;
+		background: green;
+		height: 500px;
+		}
+
+.g-cont4 div {
+	background: red; border: solid 1px white;
+	padding: 1.5em;
+	text-align: center;}
+
+
+
+
+
+/*MEDIA QUERYS*/
+
+body {background-color: blue;}
+h1 {text-align:right;}
+
+
+
+@media screen and (min-width: 800px) {
+
+	body{background-color: red;}
+
+}
+
+
+@media screen and (min-width: 1000px) {
+
+	body{background-color: orange;}
+
+}
