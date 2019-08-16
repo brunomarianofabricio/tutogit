@@ -65,6 +65,60 @@
 	padding: 1.5em;
 	text-align: center;}
 
+/*PROPIEDADES GRID ITEMS*/
+
+/*grid column-start / -end*/
+
+.g-item {
+		display: grid;
+		grid-template-columns: repeat(4, auto); /*una especie de shorthand (3 -cantidad de columnas- auto -medida.*/
+		grid-template-rows: repeat(3,150px);
+		background: green;
+		
+		}
+
+.g-item div {
+	background: red; 
+	border: solid thin black;
+
+	text-align: center;
+}
+
+.g-item div.item1 {
+					grid-column-start: 1;
+					grid-column-end: 4;
+					color: orange; 
+					font-size: 1em;
+					}
+
+.g-item div.item5 {
+					grid-column-start:1;
+					grid-column-end:3;
+					color: orange;
+					font-size: 1em;}
+
+
+
+.g-item2 {
+	background: aqua; 
+	display: grid;
+	grid-template-columns: repeat(4,25%);
+	grid-template-rows: (3,150px)
+}
+
+.g-item2 div {
+	background: aqua; 
+	border: solid thin black;
+	text-align: center;
+}
+
+
+.g-item2 div.item3 {
+					grid-row-start: 1;
+					grid-row-end: 5;
+					color: orange; 
+					font-size: 1em;
+					}
 
 
 
@@ -76,9 +130,12 @@ h1 {text-align:right;}
 
 
 
+
+
 @media screen and (min-width: 800px) {
 
 	body{background-color: red;}
+	.g-cont {grid-template-columns: auto auto;}
 
 }
 
