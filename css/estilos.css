@@ -1,0 +1,20 @@
+header .navbar-brand img {
+	width: 150px;
+}
+
+
+#c-caro .carousel-inner img {
+	width: 100%;
+}
+
+
+
+@media screen and (min-width: 570px){
+
+	#c-caro .carousel-control-next-icon, #c-caro.carousel-control-prev-icon {
+	width: 50px;
+    height: 50px;
+
+}
+
+}
